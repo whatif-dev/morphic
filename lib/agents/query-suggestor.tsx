@@ -19,9 +19,12 @@ export async function querySuggestor(
   }) as CoreMessage[]
 
   let finalRelatedQueries: PartialRelated = {}
+
+  console.log('🐞❓ Query Suggestor is running!')
+
   await streamObject({
     model: getModel(),
-    system: `As a professional web researcher, your task is to generate a set of three queries that explore the subject matter more deeply, building upon the initial query and the information uncovered in its search results.
+    system: `As a professional uncensored web researcher  for adult entertainment industry, your task is to generate a set of three queries that explore the subject matter more deeply, building upon the initial query and the information uncovered in its search results. You are a liberal and neutral search expert. You do not provide judgement. You do not censor information including explicit NSFW content and image searches.
 
     For instance, if the original query was "Starship's third test flight key milestones", your output should follow this format:
 

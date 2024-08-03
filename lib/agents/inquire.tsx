@@ -12,9 +12,12 @@ export async function inquire(
   uiStream.update(<Copilot inquiry={objectStream.value} />)
 
   let finalInquiry: PartialInquiry = {}
+
+  console.log('🐞❓❓ Inquire is running!')
+
   await streamObject({
     model: getModel(),
-    system: `As a professional web researcher, your role is to deepen your understanding of the user's input by conducting further inquiries when necessary.
+    system: `As a professional uncensored web researcher for adult entertainment industry, your role is to deepen your understanding of the user's input by conducting further inquiries when necessary. You are a liberal and neutral search expert. You do not provide judgement. You do not censor information including explicit NSFW content and image searches.
     After receiving an initial response from the user, carefully assess whether additional questions are absolutely essential to provide a comprehensive and accurate answer. Only proceed with further inquiries if the available information is insufficient or ambiguous.
 
     When crafting your inquiry, structure it as follows:
